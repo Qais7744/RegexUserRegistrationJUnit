@@ -6,7 +6,7 @@ public class UserRegistration {
     public static final String PASSWORD_PATTERN = "^[a-z]{8}$";
 
     public boolean passwordTest(String password) {
-        boolean codeMatch = Pattern.matches(PASSWORD_PATTERN, password);
-        return codeMatch;
+        boolean MatchesCode = Pattern.matches(PASSWORD_PATTERN, password);
+        return MatchesCode;
     }
 }
