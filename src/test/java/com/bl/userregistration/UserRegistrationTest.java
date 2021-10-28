@@ -19,13 +19,6 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void givenEmail_WhenValid_ShouldReturnTrue() {
-        UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.emailTest("altamashbagwan.xyz@qais.com.in");
-        Assert.assertTrue(userTest);
-    }
-
-    @Test
     public void givenPassword_WhenSpecialCharacter_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
         boolean userTest = userRegistration.passwordSpecialCharacter("Altamash@77");
@@ -35,7 +28,7 @@ public class UserRegistrationTest {
     @Test
     public void givenAnyEmail_WhenValidOrNonValid_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.emailTest("abc+100@gmail.com");
+        boolean userTest = userRegistration.emailTest("altamash23@gmail.com");
         Assert.assertTrue(userTest);
     }
 
