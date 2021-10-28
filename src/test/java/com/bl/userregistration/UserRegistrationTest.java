@@ -6,9 +6,9 @@ import org.junit.Test;
 public class UserRegistrationTest {
 
     @Test
-    public void givenSpecialCharacter_WhenValid_ShouldReturnTrue() {
+    public void givenAnyEmail_WhenValid_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.specialCharacter("Altamash@77");
+        boolean userTest = userRegistration.emailTest("abc+100@gmail.com");
         Assert.assertTrue(userTest);
     }
 }

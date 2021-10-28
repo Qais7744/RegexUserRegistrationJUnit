@@ -3,10 +3,10 @@ package com.bl.userregistration;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
-    public static final String SPECIAL_CHARACTER_PATTERN = "^([~!@#$%^&*()+{}]?[A-Za-z0-9]){8,}$";
+    public static final String ANY_EMAIL_PATTERN = "^[a-zA-Z0-9+_.-]+[@][a-zA-Z0-9]+[.a-z]{4}([.a-zA-Z,]{3})*$";
 
-    public boolean specialCharacter(String character) {
-        boolean MatchesCode = Pattern.matches(SPECIAL_CHARACTER_PATTERN, character);
+    public boolean emailTest(String gmail) {
+        boolean MatchesCode = Pattern.matches(ANY_EMAIL_PATTERN, gmail);
         return MatchesCode;
     }
 }
