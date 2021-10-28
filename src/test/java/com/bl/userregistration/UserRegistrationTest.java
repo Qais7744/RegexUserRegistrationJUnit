@@ -8,7 +8,7 @@ public class UserRegistrationTest {
     @Test
     public void givenPassword_WhenOneUpperCase_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.passwordTest("Altamash");
+        boolean userTest = userRegistration.passwordTest("Altamas77");
         Assert.assertTrue(userTest);
     }
 }
