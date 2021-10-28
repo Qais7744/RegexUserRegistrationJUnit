@@ -6,9 +6,9 @@ import org.junit.Test;
 public class UserRegistrationTest {
 
     @Test
-    public void givenPassword_WhenOneUpperCase_ShouldReturnTrue() {
+    public void givenSpecialCharacter_WhenValid_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.passwordTest("Altamas77");
+        boolean userTest = userRegistration.specialCharacter("Altamash@77");
         Assert.assertTrue(userTest);
     }
 }
