@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.userregistration.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-28T19:32:04" hostname="LAPTOP-LTNNVO58" time="0.003">
+<testsuite name="com.bl.userregistration.UserRegistrationTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2021-10-28T20:25:04" hostname="LAPTOP-LTNNVO58" time="0.026">
   <properties/>
-  <testcase name="givenAnyEmail_WhenValidOrNonValid_ShouldReturnTrue" classname="com.bl.userregistration.UserRegistrationTest" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[0]" classname="com.bl.userregistration.UserRegistrationTest" time="0.011"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[1]" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[2]" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[3]" classname="com.bl.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[4]" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[5]" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[6]" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[7]" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[8]" classname="com.bl.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[9]" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[10]" classname="com.bl.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[11]" classname="com.bl.userregistration.UserRegistrationTest" time="0.003"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[12]" classname="com.bl.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[13]" classname="com.bl.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[14]" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult[15]" classname="com.bl.userregistration.UserRegistrationTest" time="0.002"/>
+  <system-out><![CDATA[sum of numbers = : true
+sum of numbers = : true
+sum of numbers = : true
+sum of numbers = : true
+sum of numbers = : true
+sum of numbers = : true
+sum of numbers = : true
+sum of numbers = : true
+sum of numbers = : true
+sum of numbers = : false
+sum of numbers = : false
+sum of numbers = : false
+sum of numbers = : false
+sum of numbers = : false
+sum of numbers = : false
+sum of numbers = : false
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

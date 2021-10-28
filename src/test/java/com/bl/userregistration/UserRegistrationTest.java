@@ -1,48 +1,58 @@
 package com.bl.userregistration;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
+import java.util.Arrays;
+import java.util.Collection;
+
+@RunWith(value = Parameterized.class)
 public class UserRegistrationTest {
+    private UserRegistration registration;
+    private String emailPattern;
+    private static boolean expectedResult;
+
+    public UserRegistrationTest(String emailPattern, boolean expectedResult) {
+        this.emailPattern = emailPattern;
+        this.expectedResult = expectedResult;
+    }
+
+    @Before
+    public void initialize() {
+        registration = new UserRegistration();
+    }
+
+    @Parameterized.Parameters
+    public static Collection emails() {
+        return Arrays.asList(new Object[][]{
+                {"abc-100@yahoo.com", true},
+                {"abc.100@yahoo.com", true},
+                {"abc111@gmail.com", true},
+                {"abc-100@abc.com", true},
+                {"abc-100@abc.net", true},
+                {"abc.100@abc.com.au", true},
+                {"abc@gmail.com.com", true},
+                {"abc@1.com", true},
+                {"abc+100@gmail.com", true},
+                {"abc", false},
+                {".abc+100@gmail.com", false},
+                {"abc+100@gmail.com", false},
+                {"abc+100@gmail.a", false},
+                {"abc+100@.gmail.com", false},
+                {"abc+100*()@gmail.com", false},
+                {"abc@abc.com", false}
+            }
+        );
+    }
+
     @Test
-    public void givenFirstNameWhenShouldReturnTrue() {
+    public void givenEmailAsVariable_ShouldReturnAsPerTheParameterizedResult() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.firstName("Qais");
-        Assert.assertTrue(userTest);
-    }
-
-    @Test
-    public void givenLastName_WhenProper_ShouldReturnTrue() {
-        UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.lastName("Bagwan");
-        Assert.assertTrue(userTest);
-    }
-
-    @Test
-    public void givenPassword_WhenSpecialCharacter_ShouldReturnTrue() {
-        UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.passwordSpecialCharacter("Altamash@77");
-        Assert.assertTrue(userTest);
-    }
-
-    @Test
-    public void givenAnyEmail_WhenValidOrNonValid_ShouldReturnTrue() {
-        UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.emailTest("altamash23@gmail.com");
-        Assert.assertTrue(userTest);
-    }
-
-    @Test
-    public void givenMessage_WhenSad_ShouldReturnSad() {
-        MoodAnalyser mood =  new MoodAnalyser();
-        String moodTest = mood.analyseMoodHappyOrSad("This is Sad message");
-        Assert.assertEquals("SAD",moodTest);
-    }
-
-    @Test
-    public void givenMessage_WhenNotSad_ShouldReturnHappy() {
-        MoodAnalyser mood =  new MoodAnalyser();
-        String moodTest = mood.analyseMoodHappyOrSad("This is Happy message");
-        Assert.assertEquals("HAPPY",moodTest);
+        boolean userTest = userRegistration.emailTest(emailPattern, expectedResult);
+        System.out.println("sum of numbers = : " + userTest);
+        Assert.assertEquals(expectedResult,userTest);
     }
 }
