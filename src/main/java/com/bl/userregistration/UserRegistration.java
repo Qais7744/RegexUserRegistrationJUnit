@@ -3,10 +3,10 @@ package com.bl.userregistration;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
-    public static final String PHONE_NUMBER_PATTERN = "^[0-9]{2}[ ][789][0-9]{9}$";
+    public static final String PASSWORD_PATTERN = "^[a-z]{8}$";
 
-    public boolean phoneNumber(String contactNumber) {
-        boolean matchesString = Pattern.matches(PHONE_NUMBER_PATTERN, contactNumber);
-        return matchesString;
+    public boolean passwordTest(String password) {
+        boolean codeMatch = Pattern.matches(PASSWORD_PATTERN, password);
+        return codeMatch;
     }
 }

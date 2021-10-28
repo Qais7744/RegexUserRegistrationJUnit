@@ -8,7 +8,7 @@ public class UserRegistrationTest {
     @Test
     public void givenPhoneNumber_WhenCorrect_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.phoneNumber("91 7744918893");
+        boolean userTest = userRegistration.passwordTest("altamash");
         Assert.assertTrue(userTest);
     }
 }
