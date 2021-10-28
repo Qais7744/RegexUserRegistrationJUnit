@@ -6,9 +6,9 @@ import org.junit.Test;
 public class UserRegistrationTest {
 
     @Test
-    public void givenLastName_WhenProper_ShouldReturnTrue() {
+    public void givenEmail_WhenValid_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.lastName("Bagwan");
+        boolean userTest = userRegistration.email("altamashbagwan.xyz@qais.com.in");
         Assert.assertTrue(userTest);
     }
 }
