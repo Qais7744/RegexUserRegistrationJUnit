@@ -6,9 +6,9 @@ import org.junit.Test;
 public class UserRegistrationTest {
 
     @Test
-    public void givenFirstNameWhenShouldReturnTrue() {
+    public void givenLastName_WhenProper_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean userTest = userRegistration.firstName("Qais");
+        boolean userTest = userRegistration.lastName("Bagwan");
         Assert.assertTrue(userTest);
     }
 }
