@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.userregistration.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-28T17:46:35" hostname="LAPTOP-LTNNVO58" time="0.002">
+<testsuite name="com.bl.userregistration.UserRegistrationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-10-28T18:57:35" hostname="LAPTOP-LTNNVO58" time="0.007">
   <properties/>
-  <testcase name="givenAnyEmail_WhenValid_ShouldReturnTrue" classname="com.bl.userregistration.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenAnyEmail_WhenValidOrNonValid_ShouldReturnTrue" classname="com.bl.userregistration.UserRegistrationTest" time="0.004"/>
+  <testcase name="givenMessage_WhenSad_ShouldReturnSad" classname="com.bl.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmail_WhenValid_ShouldReturnTrue" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenLastName_WhenProper_ShouldReturnTrue" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_WhenSpecialCharacter_ShouldReturnTrue" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstNameWhenShouldReturnTrue" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenMessage_WhenNotSad_ShouldReturnHappy" classname="com.bl.userregistration.UserRegistrationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
