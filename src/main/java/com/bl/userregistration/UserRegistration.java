@@ -3,13 +3,27 @@ package com.bl.userregistration;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
-    public static final String EMAIL_PATTERN = "^[a-zA-Z0-9+_.-]+[@][a-zA-Z0-9]+[.a-z]{3,4}([.a-zA-Z,]{3})*$";
+    public static boolean validateDetails(String guysWithMe, String matcherWithRejex, String pattern) {
 
-    public boolean emailTest(String gmail, boolean value) {
-        boolean matchesCode = Pattern.matches(EMAIL_PATTERN, gmail);
-        if(matchesCode == value)
-            return value;
-        else
-            return false;
+        switch (pattern) {
+            case "EMAIL_PATTERN":
+                boolean forTestEmail = Pattern.matches(guysWithMe, matcherWithRejex);
+                return forTestEmail;
+            case "FIRST_NAME_PATTERN":
+                boolean forTestFirstName = Pattern.matches(guysWithMe, matcherWithRejex);
+                return forTestFirstName;
+            case "LAST_NAME_PATTERN":
+                boolean forTestLastName = Pattern.matches(guysWithMe, matcherWithRejex);
+                return forTestLastName;
+            case "MOBILE_NO_PATTERN":
+                boolean forTestmobileNumber = Pattern.matches(guysWithMe, matcherWithRejex);
+                return forTestmobileNumber;
+            case "PASSWORD_PATTERN":
+                boolean forTestPassword = Pattern.matches(guysWithMe, matcherWithRejex);
+                return forTestPassword;
+            default:
+                System.out.println("invalid input");
+                return false;
+        }
     }
 }
